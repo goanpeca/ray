@@ -2368,25 +2368,20 @@ ninja==1.13.0 \
     #   -r python/requirements/llm/llm-requirements.txt
     #   flashinfer-python
     #   vllm
-nixl==1.0.0 \
-    --hash=sha256:d4f2944e592358e53607276cdb4cc9d0827e11d5d6a8737edf020a134c3dca60
+nixl-cu13==1.0.0 \
+    --hash=sha256:27645aba4a9ceceff3efe8cea4c02832cd04e03aa0bea1a1e1cbd7a70e5180a1 \
+    --hash=sha256:310f276057d2a321055c0906024419104d8cdf3fc1ebaa5351f34edb8196b47b \
+    --hash=sha256:4b7d875fad57ada0ffe06c1c6cf07c269f173254ebae4623791aefce49f09e02 \
+    --hash=sha256:6111ec2f60e3a014c80a6145f1dab5fddd9e55a38dcfb94e5483a1a372507be8 \
+    --hash=sha256:71e69782e4b6f8b8fe1a69b99650c29aab8d0f7ada44c16e9716f05f297b84ed \
+    --hash=sha256:8f4a8a9e9a229eccf7b9736d9dad49b46f07d898a76895e9d785dd9dc561d1fb \
+    --hash=sha256:ba78cf478fce2401b8fa3c8977d44172d500ee277af7a7bc1624693299ea8a3b \
+    --hash=sha256:c1552a57828ec943e18ea26ecc943eddf42b8f1f936440469eaf1db9862cfcf5 \
+    --hash=sha256:eba80119a6b1e5d2a3b7525c04281100e4d0b5e25d6bf1d9202de384ea77ccaf \
+    --hash=sha256:ff95b44729aa64284a16a6e7b758ddd8c54dc2288f390ed2c8943976564d86ab
     # via
     #   -c python/deplocks/llm/rayllm_test_py312_cpu.lock
     #   -r python/requirements/llm/llm-requirements.txt
-nixl-cu12==1.0.0 \
-    --hash=sha256:4fee0d052e0905b5507d5a6a656bcbd302ced4c4dd3456f17a81b5ea6d4e7a0d \
-    --hash=sha256:585dccc8dbfe84f82ae092646f9ef891170bd7b4fc4721f98b45f5b7de1df601 \
-    --hash=sha256:60938a5f85d6e51cb4c02452edab31d549854a1bd661be30999696a44875ff69 \
-    --hash=sha256:8435786378e6c6481499b019454e51a4bf6f09d98729ab2607ded36cf9ac2b20 \
-    --hash=sha256:8d8907bc9d568a7e6f48fe723eb155c6365bddf2054f7845fcc6b1e97bc23069 \
-    --hash=sha256:a1d2fca137cd0917ec6b0e3c981bef20c5e40ab400333c57546a13c4d51e984e \
-    --hash=sha256:bea43a55eff35f2fd930eb258ed22ec949d1a0bd77b693ce22623854a463172e \
-    --hash=sha256:bec0d3c5dc3d37a7f85769a73b55eea40df0933e193de317b5b0ed0d5dba8edd \
-    --hash=sha256:d4347c489c930fc4c2f35693be14dd6c54f7d094639b29564f477396bad664ab \
-    --hash=sha256:f9a79b190bc627225452f4e168ba082f3670d3629490d882a95935a92161210d
-    # via
-    #   -c python/deplocks/llm/rayllm_test_py312_cpu.lock
-    #   nixl
 numba==0.65.0 \
     --hash=sha256:032b0b8e879512cd424d79eed6d772a1399c6387ded184c2cf3cc22c08d750a6 \
     --hash=sha256:05c0a9fdf75d85f57dee47b719e8d6415707b80aae45d75f63f9dc1b935c29f7 \
@@ -2482,7 +2477,7 @@ numpy==2.2.6 \
     #   gymnasium
     #   mistral-common
     #   ml-dtypes
-    #   nixl-cu12
+    #   nixl-cu13
     #   numba
     #   nvidia-cutlass-dsl-libs-base
     #   opencv-python-headless
@@ -4707,7 +4702,7 @@ torch==2.11.0+cpu \
     #   -c python/deplocks/llm/rayllm_test_py312_cpu.lock
     #   compressed-tensors
     #   flashinfer-python
-    #   nixl-cu12
+    #   nixl-cu13
     #   quack-kernels
     #   tilelang
     #   torch-c-dlpack-ext

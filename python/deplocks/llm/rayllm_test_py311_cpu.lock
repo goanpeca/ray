@@ -3089,18 +3089,33 @@ ninja==1.13.0 \
     #   -r python/requirements/llm/llm-requirements.txt
     #   flashinfer-python
     #   vllm
-nixl-cu13==1.0.0 \
-    --hash=sha256:27645aba4a9ceceff3efe8cea4c02832cd04e03aa0bea1a1e1cbd7a70e5180a1 \
-    --hash=sha256:310f276057d2a321055c0906024419104d8cdf3fc1ebaa5351f34edb8196b47b \
-    --hash=sha256:4b7d875fad57ada0ffe06c1c6cf07c269f173254ebae4623791aefce49f09e02 \
-    --hash=sha256:6111ec2f60e3a014c80a6145f1dab5fddd9e55a38dcfb94e5483a1a372507be8 \
-    --hash=sha256:71e69782e4b6f8b8fe1a69b99650c29aab8d0f7ada44c16e9716f05f297b84ed \
-    --hash=sha256:8f4a8a9e9a229eccf7b9736d9dad49b46f07d898a76895e9d785dd9dc561d1fb \
-    --hash=sha256:ba78cf478fce2401b8fa3c8977d44172d500ee277af7a7bc1624693299ea8a3b \
-    --hash=sha256:c1552a57828ec943e18ea26ecc943eddf42b8f1f936440469eaf1db9862cfcf5 \
-    --hash=sha256:eba80119a6b1e5d2a3b7525c04281100e4d0b5e25d6bf1d9202de384ea77ccaf \
-    --hash=sha256:ff95b44729aa64284a16a6e7b758ddd8c54dc2288f390ed2c8943976564d86ab
+nixl==1.0.1 \
+    --hash=sha256:2c920fae18cb6319f9ce48cae0d4b8a433f2b1df3e809fad14d731041634893e
     # via -r python/requirements/llm/llm-requirements.txt
+nixl-cu12==1.0.1 \
+    --hash=sha256:0143bc14d7b969c7519639821c126d3ba47cbaf38281c5d85656a348f65e06a4 \
+    --hash=sha256:24c676c81f06dabb05e81ae17ee1236bfa9b6abbad3f4a37299b7658f4bfd782 \
+    --hash=sha256:40804fadf847df8906f1a0249d9ced6574bbab25e72fd8914e4e0f5f26787519 \
+    --hash=sha256:44ac2eeecc1a27dbe54f1df8e3568e4d142f0a881afca9d15dff0bb75838594c \
+    --hash=sha256:7548417b8089078689d8f3ee56dd174991c06c621d3440fb0c8a967e35e39ff6 \
+    --hash=sha256:85d3709edc6741023c4cfadc015bce822da7488bcc4cc6871cf7c078b5a719f9 \
+    --hash=sha256:a0fae78732a70d00c229c987917052f54c7ff581f83c772e05d546d211e6828d \
+    --hash=sha256:ceb3d6243d1f5333c6d505c645d9ae18f96f61ff644af3b275e9115e65012e8f \
+    --hash=sha256:cfeeac742a81545e7124d03dd6c7ce79bb9a70d679a22a8bd5c04fb9649034a2 \
+    --hash=sha256:e2fef21327f5ddf715e00b73ab7e1eac8cf8a529d18590f010cbbc22792e71a6
+    # via nixl
+nixl-cu13==1.0.1 \
+    --hash=sha256:056fa1335a4c46439e42e8e65c3b69bf2f9b6e79bcfa34b8ba4f2c28a9e17769 \
+    --hash=sha256:059278069b98a40722e04d710f537c03b4b7b9935b70c3dc2ec4f09f66daa454 \
+    --hash=sha256:461c18d6b0382772cfaffff8de30d47b1e20706741521bde6e367ccbbc37bb01 \
+    --hash=sha256:6abcb31c1a8df204d8738d18a2e362c54c60938cc8faaf13f5c39dc0abcfab98 \
+    --hash=sha256:953e4911a5f58d7e58d97fe97576cb47841a76201c6e21e1b7d9e36869a2e271 \
+    --hash=sha256:9ce6a3b395c3be76b7f9a87401db375adbb5a04460e6a01cf86b02801c428f37 \
+    --hash=sha256:a4a0b4c4f377c6dd86e10ae47798e6ba1ec372aa11243113b1cf7fc8292562d4 \
+    --hash=sha256:dde218558617d93cb0952b4a15a0ec6667cc726422939e366376e0f952753903 \
+    --hash=sha256:e1d73d89863f3b3c123b1be57165b7217252417b3aa3806ea1ff062a4acd0190 \
+    --hash=sha256:f21e8abb0b4f3d4e2e09c15db1f8a798ee8402bf1542804b866b89b92cce951e
+    # via nixl
 notebook-shim==0.2.3 \
     --hash=sha256:a83496a43341c1674b093bfcebf0fe8e74cbe7eda5fd2bbc56f8e39e1486c0c7 \
     --hash=sha256:f69388ac283ae008cd506dda10d0288b09a017d822d5e8c7129a152cbd3ce7e9
@@ -3201,6 +3216,7 @@ numpy==2.2.6 \
     #   gymnasium
     #   mistral-common
     #   ml-dtypes
+    #   nixl-cu12
     #   nixl-cu13
     #   numba
     #   nvidia-cutlass-dsl-libs-base
@@ -5673,6 +5689,7 @@ torch==2.11.0+cpu \
     # via
     #   compressed-tensors
     #   flashinfer-python
+    #   nixl-cu12
     #   nixl-cu13
     #   quack-kernels
     #   tilelang
